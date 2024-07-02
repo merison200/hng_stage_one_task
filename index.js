@@ -9,7 +9,9 @@ const OPENWEATHERMAP_API_KEY = process.env.OPENWEATHERMAP_API_KEY;
 
 app.get('/api/hello', async (req, res) => {
   const name = req.query.visitor_name || 'Mark';
-  const userIp = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  //const userIp = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    const userIp = "102.88.84.80";
+
 
   try {
 
